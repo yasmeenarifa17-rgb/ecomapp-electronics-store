@@ -1,6 +1,7 @@
-# EcomApp - Electronics Store
+<img width="1664" height="973" alt="image" src="https://github.com/user-attachments/assets/fdd7d9d1-3f33-4bcc-b1b7-bc93f4c0a27e" /># EcomApp - Electronics Store
 
 A full-stack E-Commerce web application built using React, Node.js, and Express.
+LIVE WEBSITE : https://ecomapp-electronics-store.vercel.app/
 
 ## Features
 
