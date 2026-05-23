@@ -1,15 +1,39 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
+
 
 function Home({ cart, setCart }) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("http://localhost:5000/api/products")
-      .then((res) => setProducts(res.data))
-      .catch((err) => console.log(err));
-  }, []);
+  const productsData = [
+    {
+      id: 1,
+      name: "Gaming Laptop",
+      price: 65999,
+      image:
+        "https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+      description: "High performance gaming laptop",
+    },
+    {
+      id: 2,
+      name: "Wireless Headphones",
+      price: 2999,
+      image:
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+      description: "Premium wireless headphones",
+    },
+    {
+      id: 3,
+      name: "Smart Watch",
+      price: 4999,
+      image:
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+      description: "Modern smartwatch",
+    },
+  ];
+
+  setProducts(productsData);
+}, []); 
 
   const addToCart = (product) => {
     setCart([...cart, product]);
